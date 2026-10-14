@@ -335,7 +335,7 @@ export default function DashboardPage() {
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                   data={daily}
-                  margin={{ top: 4, right: 4, bottom: 0, left: -16 }}
+                  margin={{ top: 4, right: 4, bottom: 0, left: 4 }}
                 >
                   <CartesianGrid
                     stroke="var(--color-border)"
@@ -355,7 +355,7 @@ export default function DashboardPage() {
                   <YAxis
                     tickLine={false}
                     axisLine={false}
-                    width={56}
+                    width="auto"
                     tick={{ fill: "currentColor", fontSize: 11 }}
                     className="text-[var(--color-muted-foreground)]"
                     tickFormatter={(value) => {

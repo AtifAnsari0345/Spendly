@@ -575,7 +575,7 @@ export default function AnalyticsPage() {
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
                   data={chartPoints}
-                  margin={{ top: 4, right: 4, bottom: 0, left: -16 }}
+                  margin={{ top: 4, right: 4, bottom: 0, left: 4 }}
                 >
                   <defs>
                     <linearGradient
@@ -620,7 +620,7 @@ export default function AnalyticsPage() {
                   <YAxis
                     tickLine={false}
                     axisLine={false}
-                    width={56}
+                    width="auto"
                     tick={{ fill: "currentColor", fontSize: 11 }}
                     className="text-[var(--color-muted-foreground)]"
                     tickFormatter={(value) => {

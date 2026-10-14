@@ -682,7 +682,7 @@ export default function ReportsPage() {
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart
                   data={monthlySpendingChart}
-                  margin={{ top: 4, right: 4, bottom: 0, left: -16 }}
+                  margin={{ top: 4, right: 4, bottom: 0, left: 4 }}
                 >
                   <defs>
                     <linearGradient id="reportArea" x1="0" y1="0" x2="0" y2="1">
@@ -721,7 +721,7 @@ export default function ReportsPage() {
                   <YAxis
                     tickLine={false}
                     axisLine={false}
-                    width={56}
+                    width="auto"
                     tick={{ fill: "currentColor", fontSize: 11 }}
                     className="text-[var(--color-muted-foreground)]"
                     tickFormatter={(value) => {
